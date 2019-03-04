@@ -1,10 +1,10 @@
 import React, { Component } from 'react';
 import './App.css';
-import TeamBox from "./containers/teamBox";
+import PlayerBox from "./containers/playerBox";
 
 class App extends Component {
   render() {
-    return <TeamBox />;
+    return <PlayerBox />;
   }
 }
 

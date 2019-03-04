@@ -2,7 +2,7 @@ import React, { Component } from "react";
 import DreamTeam from "../components/dreamTeam";
 import PlayerForm from "../components/playerForm";
 
-class TeamBox extends Component {
+class PlayerBox extends Component {
 
   constructor(props) {
     super(props);
@@ -31,4 +31,4 @@ class TeamBox extends Component {
   }
 }
 
-export default TeamBox;
+export default PlayerBox;
