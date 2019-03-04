@@ -24,7 +24,7 @@ class TeamBox extends Component {
       <div className="team-box">
         <h2>Add a Player</h2>
         <PlayerForm onPlayerSubmit={ this.handlePlayerSubmit} />
-        <h2>Players</h2>
+        <h2>Starting Lineup</h2>
         <DreamTeam squad={this.state.squad} />
       </div>
     );

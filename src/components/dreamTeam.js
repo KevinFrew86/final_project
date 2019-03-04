@@ -5,7 +5,7 @@ class DreamTeam extends Component {
   render() {
     const playerNodes = this.props.squad.map(player => {
       return (
-        <Player name={player.name} key={player.id}>{player.team}</Player>
+        <Player name={player.name} team={player.team} position={player.position} key={player.id}></Player>
       );
     });
 

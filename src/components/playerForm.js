@@ -31,7 +31,7 @@ class PlayerForm extends Component {
     event.preventDefault();
     const name = this.state.name;
     const team = this.state.team;
-    const position = this.state;
+    const position = this.state.position;
     if (!name || !team || !position) {
       return
     }
