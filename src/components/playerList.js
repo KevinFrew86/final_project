@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import Player from "./player";
 
-class DreamTeam extends Component {
+class PlayerList extends Component {
   render() {
     const playerNodes = this.props.squad.map(player => {
       return (
@@ -10,11 +10,11 @@ class DreamTeam extends Component {
     });
 
     return (
-      <div className="dream-team">
+      <div className="player-list">
         {playerNodes}
       </div>
     )
   }
 }
 
-export default DreamTeam;
+export default PlayerList;

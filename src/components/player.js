@@ -5,9 +5,8 @@ class Player extends Component {
     return (
       <div className="player">
         <h4>{this.props.children}</h4>
-        <p>{this.props.name}</p>
-        <p>{this.props.team}</p>
-        <p>{this.props.position}</p>
+        <p>{this.props.name} - {this.props.team} - {this.props.position}</p>
+
       </div>
     );
   }
