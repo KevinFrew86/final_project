@@ -1,9 +1,7 @@
 package com.example.DreamTeam.models;
 
-
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import org.hibernate.annotations.Cascade;
-import org.springframework.data.annotation.Id;
 
 import javax.persistence.*;
 import java.io.Serializable;
@@ -15,10 +13,7 @@ public class Player implements Serializable {
     @Column(name = "name")
     private String name;
 
-    @Column(name = "team")
-    private String team;
-
-    @Column(name="position")
+    @Column(name = "position")
     private String position;
 
     @Id
@@ -35,14 +30,14 @@ public class Player implements Serializable {
 
     private List<Team> teams;
 
-    public Player(String name, String team, String position) {
-        this.name = name;
-        this.team = team;
-        this.position = position;
 
+    public Player(String name, String position, Long id, List<Team> teams) {
+        this.name = name;
+        this.position = position;
+        this.teams = new ArrayList<Team>;
     }
 
-    public Player(){
+    public Players(){
 
     }
 
@@ -52,14 +47,6 @@ public class Player implements Serializable {
 
     public void setName(String name) {
         this.name = name;
-    }
-
-    public String getTeam() {
-        return team;
-    }
-
-    public void setTeam(String team) {
-        this.team = team;
     }
 
     public String getPosition() {
